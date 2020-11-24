@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Proza+Libre:wght@600&family=Quicksand&display=swap">
+    <link rel="stylesheet" href="styles/style.css">
+    <title>Canine Plus Nine</title>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <a href="index.html">
+                <img src="images/canine-plus-nine-logo.svg" alt="Canine Plus Nine" class="logo">
+            </a>
+            <div class="header-text">Calculate your pet's human age based on scientific research!</div>
+        </header>
+        <nav>
+            <div class="choose-pet">Choose Your Pet</div>
+            <div class="pet-container">
+                <div class="dog-container">
+                    <img src="images/dog.svg" alt="Dog" class="dog-image">
+                    <button class="dog-button">
+                        Dog
+                        <img src="" alt="" class="check-icon">
+                    </button>
+                </div>
+                <div class="cat-container">
+                    <img src="images/cat.svg" alt="Cat" class="cat-image">
+                    <button class="cat-button">
+                        Cat
+                        <img src="" alt="" class="check-icon">
+                    </button>
+                </div>
+            </div>
+        </nav>
+        <main>
+
+            <section class="dog-section">
+                <form class="dog-form">
+                    <input type="number" class="dog-value" placeholder="Enter Your Dog's Age...">
+                    <input type="submit" class="dog-submit-button" value="Calculate">
+                </form>
+                <div class="dog-age-info"></div>
+            </section>
+
+            <section class="cat-section">
+                <form class="cat-form">
+                    <input type="number" class="cat-value" placeholder="Enter Your Cat's Age...">
+                    <input type="submit" class="cat-submit-button" value="Calculate">
+                </form>
+                <div class="cat-age-info"></div>
+            </section>
+
+        </main>
+        <footer>
+            <a href="#" target="_blank">
+                <div class="developed-by">Developed by Arshad Moolla</div>
+            </a>
+            <a href="#">
+                <span>About App</span>
+            </a>
+            <span class="footer-link-separator">|</span>
+            <a href="#">
+                <span>Source Code</span>
+            </a>
+        </footer>
+    </div>
+    <script src="js/ui.js"></script>
+    <script src="js/dog.js"></script>
+    <script src="js/cat.js"></script>
+</body>
+</html>
+
+<!-- dog link: https://doi.org/10.1016/j.cels.2020.06.006 -->
+<!-- cat link: https://doi.org/10.21767/2572-5459.100034 -->

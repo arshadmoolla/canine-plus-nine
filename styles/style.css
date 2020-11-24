@@ -1,0 +1,217 @@
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Quicksand", sans-serif;
+}
+
+body {
+  background-color: #FDF2E7;
+}
+
+.container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  min-height: 100vh;
+  padding: 20px;
+}
+
+header .logo {
+  width: 320px;
+  margin-bottom: 10px;
+}
+
+header .header-text {
+  color: #BF755A;
+  font-family: "Quicksand", sans-serif;
+  font-size: 18px;
+  margin-bottom: 50px;
+}
+
+nav .choose-pet {
+  font-family: "Proza Libre", sans-serif;
+  color: #5E92D4;
+  font-size: 22px;
+}
+
+nav .pet-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-bottom: 50px;
+}
+
+nav .dog-container,
+nav .cat-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 10px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+nav .dog-image,
+nav .cat-image {
+  width: 120px;
+  cursor: pointer;
+}
+
+nav .dog-button,
+nav .cat-button {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #5E92D4;
+  color: #FDF2E7;
+  border: none;
+  width: 150px;
+  height: 50px;
+  border-radius: 6px;
+  outline: none;
+  cursor: pointer;
+  font-size: 22px;
+}
+
+nav .dog-button:hover,
+nav .cat-button:hover {
+  background-color: #0B609A;
+}
+
+nav .check-icon {
+  margin-left: 10px;
+}
+
+section {
+  display: none;
+}
+
+section form {
+  margin-bottom: 50px;
+}
+
+section form .dog-value,
+section form .cat-value {
+  background-color: #FDF2E7;
+  color: #BF755A;
+  border: 2px solid #5E92D4;
+  border-radius: 6px;
+  height: 50px;
+  width: 270px;
+  font-size: 22px;
+  padding: 10px;
+  font-weight: bold;
+  outline: none;
+  margin-right: 10px;
+  text-align: center;
+}
+
+section form ::-webkit-input-placeholder {
+  font-weight: normal;
+  color: #BF755A;
+}
+
+section form :-ms-input-placeholder {
+  font-weight: normal;
+  color: #BF755A;
+}
+
+section form ::-ms-input-placeholder {
+  font-weight: normal;
+  color: #BF755A;
+}
+
+section form ::placeholder {
+  font-weight: normal;
+  color: #BF755A;
+}
+
+section form .dog-submit-button,
+section form .cat-submit-button {
+  background-color: #5E92D4;
+  color: #FDF2E7;
+  border: none;
+  width: 150px;
+  height: 50px;
+  border-radius: 6px;
+  outline: none;
+  cursor: pointer;
+  font-size: 22px;
+}
+
+section form .dog-submit-button:hover,
+section form .cat-submit-button:hover {
+  background-color: #0B609A;
+}
+
+section .dog-age-info,
+section .cat-age-info {
+  font-family: "Proza Libre", sans-serif;
+  font-size: 22px;
+  color: #BF755A;
+  margin-bottom: 50px;
+}
+
+footer a {
+  color: #0B609A;
+  font-size: 16px;
+  text-decoration: none;
+}
+
+footer .developed-by {
+  margin-bottom: 10px;
+}
+
+footer .footer-link-separator {
+  color: #BF755A;
+}
+
+@media only screen and (max-width: 600px) {
+  header .logo {
+    width: 300px;
+  }
+  header .header-text {
+    margin-bottom: 40px;
+  }
+  nav .choose-pet {
+    font-size: 22px;
+  }
+  nav .pet-container {
+    margin-bottom: 40px;
+  }
+  section form {
+    margin-bottom: 40px;
+  }
+  section form .dog-value,
+  section form .cat-value {
+    margin-bottom: 10px;
+  }
+  section .dog-age-info,
+  section .cat-age-info {
+    margin-bottom: 40px;
+  }
+}

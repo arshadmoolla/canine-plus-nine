@@ -1,0 +1,190 @@
+// Colors used
+$light_blue: #5E92D4;
+$dark_blue: #0B609A;
+$brown: #BF755A;
+$light_color: #FDF2E7;
+
+// Fonts used
+$primary_font: 'Quicksand', sans-serif;
+$secondary_font: 'Proza Libre', sans-serif;
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: $primary_font;
+}
+
+body {
+    background-color: $light_color;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    // justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    min-height: 100vh;
+    padding: 20px;
+}
+
+header {
+    .logo {
+        width: 320px;
+        margin-bottom: 10px;
+    }
+    .header-text {
+        color: $brown;
+        font-family: $primary_font;
+        font-size: 18px;
+        margin-bottom: 50px;
+    }
+}
+
+nav {
+    .choose-pet {
+        font-family: $secondary_font;
+        color: $light_blue;
+        font-size: 22px;
+    }
+    .pet-container {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 50px;
+    }
+    .dog-container,
+    .cat-container {
+        display: flex;
+        flex-direction: column;
+        padding: 10px;
+        align-items: center;
+    }
+    .dog-image,
+    .cat-image {
+        width: 120px;
+        cursor: pointer;
+    }
+    .dog-button,
+    .cat-button {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: $light_blue;
+        color: $light_color;
+        border: none;
+        width: 150px;
+        height: 50px;
+        border-radius: 6px;
+        outline: none;
+        cursor: pointer;
+        font-size: 22px;
+    }
+    .dog-button:hover,
+    .cat-button:hover {
+        background-color: $dark_blue;
+    }
+    .check-icon {
+        margin-left: 10px;
+    }
+}
+
+section {
+    display: none;
+
+    form {
+        margin-bottom: 50px;
+
+        .dog-value,
+        .cat-value {
+            background-color: $light_color;
+            color: $brown;
+            border: 2px solid $light_blue;
+            border-radius: 6px;
+            height: 50px;
+            width: 270px;
+            font-size: 22px;
+            padding: 10px;
+            font-weight: bold;
+            outline: none;
+            margin-right: 10px;
+            text-align: center;
+        }
+        ::placeholder {
+            font-weight: normal;
+            color: $brown;
+        }
+        .dog-submit-button,
+        .cat-submit-button {
+            background-color: $light_blue;
+            color: $light_color;
+            border: none;
+            width: 150px;
+            height: 50px;
+            border-radius: 6px;
+            outline: none;
+            cursor: pointer;
+            font-size: 22px;
+        }
+        .dog-submit-button:hover,
+        .cat-submit-button:hover {
+            background-color: $dark_blue;
+        }
+    }
+    .dog-age-info,
+    .cat-age-info {
+        font-family: $secondary_font;
+        font-size: 22px;
+        color: $brown;
+        margin-bottom: 50px;
+    }
+}
+
+footer {
+    a {
+    color: $dark_blue;
+    font-size: 16px;
+    text-decoration: none;
+    }
+
+    .developed-by {
+        margin-bottom: 10px;
+    }
+    .footer-link-separator {
+        color: $brown;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    header {
+        .logo {
+            width: 300px;
+        }
+        .header-text {
+            margin-bottom: 40px;
+        }
+    }
+    nav {
+        .choose-pet {
+            font-size: 22px;
+        }
+        .pet-container {
+            margin-bottom: 40px;
+        }
+    }
+    section {
+        form {
+            margin-bottom: 40px;
+    
+            .dog-value,
+            .cat-value {
+                margin-bottom: 10px;
+            }
+        }
+        .dog-age-info,
+        .cat-age-info {
+            // font-size: 20px;
+            margin-bottom: 40px;
+        }
+    }
+}
