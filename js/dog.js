@@ -10,6 +10,11 @@ const convertDogAge = (dogAge) => {
 dogSubmitButton.addEventListener("click", (e) => {
     e.preventDefault();
     const dogToHumanAge = convertDogAge(dogValue.value);
-    dogInfo.innerHTML = `At the age of ${dogValue.value}, your dog's human age is ${dogToHumanAge} years old.`;
+    if (dogValue.value < 0.15 || dogValue.value == "") {
+        dogInfo.innerHTML = `Please enter a valid age.`;
+    }
+    else {
+        dogInfo.innerHTML = `At the age of ${dogValue.value}, your dog's human age is ${dogToHumanAge} years old.`;
+    }
     dogForm.reset();
 });

@@ -84,7 +84,8 @@ nav {
     .cat-button:hover {
         background-color: $dark_blue;
     }
-    .check-icon {
+    .dog-check-icon,
+    .cat-check-icon {
         margin-left: 10px;
     }
 }
@@ -165,9 +166,6 @@ footer {
         }
     }
     nav {
-        .choose-pet {
-            font-size: 22px;
-        }
         .pet-container {
             margin-bottom: 40px;
         }

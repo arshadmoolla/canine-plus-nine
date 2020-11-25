@@ -18,11 +18,14 @@ const convertCatAge = (catAge) => {
 catSubmitButton.addEventListener("click", (e) => {
     e.preventDefault();
     const catToHumanAge = convertCatAge(catValue.value);
-    if (catToHumanAge != undefined) {
+    if (catValue.value == "" || catValue.value <= 0) {
+        catInfo.innerHTML = `Pleae enter a valid age.`
+    }
+    else if (catToHumanAge != undefined) {
         catInfo.innerHTML = `At the age of ${catValue.value}, your cat's human age is ${catToHumanAge} years old.`;
     }
     else {
-        catInfo.innerHTML = `According to the equation used, age is ${catToHumanAge} between 1 and 1.5.`;
+        catInfo.innerHTML = `According to the equation used, age is ${catToHumanAge} between 1 and 1.5, exclusive.`;
     }
     catForm.reset();
 });
