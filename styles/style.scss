@@ -1,18 +1,20 @@
+// Fonts used
+@import url('https://fonts.googleapis.com/css2?family=Proza+Libre:wght@600&family=Quicksand&display=swap');
+$primary_font: 'Quicksand', sans-serif;
+$secondary_font: 'Proza Libre', sans-serif;
+
 // Colors used
 $light_blue: #5E92D4;
 $dark_blue: #0B609A;
 $brown: #BF755A;
 $light_color: #FDF2E7;
 
-// Fonts used
-$primary_font: 'Quicksand', sans-serif;
-$secondary_font: 'Proza Libre', sans-serif;
-
 * {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
     font-family: $primary_font;
+    line-height: 1.5;
 }
 
 body {
@@ -90,7 +92,7 @@ nav {
     }
 }
 
-section {
+section.calculator {
     display: none;
 
     form {
@@ -137,22 +139,118 @@ section {
         font-family: $secondary_font;
         font-size: 22px;
         color: $brown;
+        margin-bottom: 10px;
+    }
+    .cat-age-info {
         margin-bottom: 50px;
+    }
+    .dog-age-varies {
+        margin-bottom: 50px;
+        font-size: 18px;
+        color: $brown;
     }
 }
 
 footer {
     a {
     color: $dark_blue;
-    font-size: 16px;
+    font-size: 18px;
     text-decoration: none;
+    }
+    a:hover {
+        color: $brown
     }
 
     .developed-by {
-        margin-bottom: 10px;
+        margin-top: 10px;
+        font-size: 16px;
     }
     .footer-link-separator {
         color: $brown;
+    }
+}
+
+// How It Works Page
+nav {
+    .back-link {
+        text-decoration: none;
+    }
+    .back-button {
+        background-color: $light_blue;
+        color: $light_color;
+        border: none;
+        width: 120px;
+        height: 50px;
+        border-radius: 6px;
+        outline: none;
+        cursor: pointer;
+        font-size: 22px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 50px;
+
+        .back-icon {
+            margin-right: 10px;
+        }
+    }
+    .back-button:hover {
+        background-color: $dark_blue;
+    }
+}
+
+main.how-it-works-main {
+    max-width: 660px;
+
+    h1 {
+        font-family: $secondary_font;
+        color: $light_blue;
+        font-weight: normal;
+        font-size: 26px;
+        margin-bottom: 20px;
+        text-align: left;
+    }
+    section.calculator-info {
+        margin-bottom: 50px;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        text-align: left;
+    
+        .section-heading {
+            font-family: $secondary_font;
+            color: $brown;
+            font-size: 22px;
+            margin-bottom: 10px;
+        }
+        .section-content {
+            color: $dark_blue;
+            font-size: 18px;
+
+            p {
+                margin-bottom: 15px;
+            }
+            p:nth-child(2) {
+                font-style: italic;
+                background-color: rgba(94, 146, 212, 0.1);
+                padding: 10px;
+                display: inline-block;
+                border-radius: 6px;
+            }
+            p:nth-child(5) {
+                font-weight: bold;
+            }
+            .cat-equation-image {
+                max-width: 460px;
+            }
+            .article-link {
+                color: $dark_blue;
+                text-decoration: none;
+            }
+            .link-icon {
+                width: 16px;
+            }
+        }
     }
 }
 
@@ -179,9 +277,14 @@ footer {
                 margin-bottom: 10px;
             }
         }
-        .dog-age-info,
-        .cat-age-info {
+        .dog-age-info {
             // font-size: 20px;
+            margin-bottom: 10px;
+        }
+        .cat-age-info {
+            margin-bottom: 40px;
+        }
+        .dog-age-varies {
             margin-bottom: 40px;
         }
     }

@@ -1,9 +1,11 @@
+@import url("https://fonts.googleapis.com/css2?family=Proza+Libre:wght@600&family=Quicksand&display=swap");
 * {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   margin: 0;
   padding: 0;
   font-family: "Quicksand", sans-serif;
+  line-height: 1.5;
 }
 
 body {
@@ -107,16 +109,16 @@ nav .cat-check-icon {
   margin-left: 10px;
 }
 
-section {
+section.calculator {
   display: none;
 }
 
-section form {
+section.calculator form {
   margin-bottom: 50px;
 }
 
-section form .dog-value,
-section form .cat-value {
+section.calculator form .dog-value,
+section.calculator form .cat-value {
   background-color: #FDF2E7;
   color: #BF755A;
   border: 2px solid #5E92D4;
@@ -131,28 +133,28 @@ section form .cat-value {
   text-align: center;
 }
 
-section form ::-webkit-input-placeholder {
+section.calculator form ::-webkit-input-placeholder {
   font-weight: normal;
   color: #BF755A;
 }
 
-section form :-ms-input-placeholder {
+section.calculator form :-ms-input-placeholder {
   font-weight: normal;
   color: #BF755A;
 }
 
-section form ::-ms-input-placeholder {
+section.calculator form ::-ms-input-placeholder {
   font-weight: normal;
   color: #BF755A;
 }
 
-section form ::placeholder {
+section.calculator form ::placeholder {
   font-weight: normal;
   color: #BF755A;
 }
 
-section form .dog-submit-button,
-section form .cat-submit-button {
+section.calculator form .dog-submit-button,
+section.calculator form .cat-submit-button {
   background-color: #5E92D4;
   color: #FDF2E7;
   border: none;
@@ -164,31 +166,149 @@ section form .cat-submit-button {
   font-size: 22px;
 }
 
-section form .dog-submit-button:hover,
-section form .cat-submit-button:hover {
+section.calculator form .dog-submit-button:hover,
+section.calculator form .cat-submit-button:hover {
   background-color: #0B609A;
 }
 
-section .dog-age-info,
-section .cat-age-info {
+section.calculator .dog-age-info,
+section.calculator .cat-age-info {
   font-family: "Proza Libre", sans-serif;
   font-size: 22px;
   color: #BF755A;
+  margin-bottom: 10px;
+}
+
+section.calculator .cat-age-info {
   margin-bottom: 50px;
+}
+
+section.calculator .dog-age-varies {
+  margin-bottom: 50px;
+  font-size: 18px;
+  color: #BF755A;
 }
 
 footer a {
   color: #0B609A;
-  font-size: 16px;
+  font-size: 18px;
   text-decoration: none;
 }
 
+footer a:hover {
+  color: #BF755A;
+}
+
 footer .developed-by {
-  margin-bottom: 10px;
+  margin-top: 10px;
+  font-size: 16px;
 }
 
 footer .footer-link-separator {
   color: #BF755A;
+}
+
+nav .back-link {
+  text-decoration: none;
+}
+
+nav .back-button {
+  background-color: #5E92D4;
+  color: #FDF2E7;
+  border: none;
+  width: 120px;
+  height: 50px;
+  border-radius: 6px;
+  outline: none;
+  cursor: pointer;
+  font-size: 22px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-bottom: 50px;
+}
+
+nav .back-button .back-icon {
+  margin-right: 10px;
+}
+
+nav .back-button:hover {
+  background-color: #0B609A;
+}
+
+main.how-it-works-main {
+  max-width: 660px;
+}
+
+main.how-it-works-main h1 {
+  font-family: "Proza Libre", sans-serif;
+  color: #5E92D4;
+  font-weight: normal;
+  font-size: 26px;
+  margin-bottom: 20px;
+  text-align: left;
+}
+
+main.how-it-works-main section.calculator-info {
+  margin-bottom: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  text-align: left;
+}
+
+main.how-it-works-main section.calculator-info .section-heading {
+  font-family: "Proza Libre", sans-serif;
+  color: #BF755A;
+  font-size: 22px;
+  margin-bottom: 10px;
+}
+
+main.how-it-works-main section.calculator-info .section-content {
+  color: #0B609A;
+  font-size: 18px;
+}
+
+main.how-it-works-main section.calculator-info .section-content p {
+  margin-bottom: 15px;
+}
+
+main.how-it-works-main section.calculator-info .section-content p:nth-child(2) {
+  font-style: italic;
+  background-color: rgba(94, 146, 212, 0.1);
+  padding: 10px;
+  display: inline-block;
+  border-radius: 6px;
+}
+
+main.how-it-works-main section.calculator-info .section-content p:nth-child(5) {
+  font-weight: bold;
+}
+
+main.how-it-works-main section.calculator-info .section-content .cat-equation-image {
+  max-width: 460px;
+}
+
+main.how-it-works-main section.calculator-info .section-content .article-link {
+  color: #0B609A;
+  text-decoration: none;
+}
+
+main.how-it-works-main section.calculator-info .section-content .link-icon {
+  width: 16px;
 }
 
 @media only screen and (max-width: 600px) {
@@ -208,8 +328,13 @@ footer .footer-link-separator {
   section form .cat-value {
     margin-bottom: 10px;
   }
-  section .dog-age-info,
+  section .dog-age-info {
+    margin-bottom: 10px;
+  }
   section .cat-age-info {
+    margin-bottom: 40px;
+  }
+  section .dog-age-varies {
     margin-bottom: 40px;
   }
 }
