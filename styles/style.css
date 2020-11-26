@@ -189,6 +189,11 @@ section.calculator .dog-age-varies {
   color: #BF755A;
 }
 
+footer .paw-icon {
+  width: 30px;
+  margin-bottom: 5px;
+}
+
 footer a {
   color: #0B609A;
   font-size: 18px;
@@ -286,20 +291,19 @@ main.how-it-works-main section.calculator-info .section-content p {
   margin-bottom: 15px;
 }
 
-main.how-it-works-main section.calculator-info .section-content p:nth-child(2) {
-  font-style: italic;
-  background-color: rgba(94, 146, 212, 0.1);
-  padding: 10px;
-  display: inline-block;
-  border-radius: 6px;
-}
-
-main.how-it-works-main section.calculator-info .section-content p:nth-child(5) {
+main.how-it-works-main section.calculator-info .section-content .reference-heading {
   font-weight: bold;
+  font-size: 16px;
+  margin-bottom: 5px;
 }
 
-main.how-it-works-main section.calculator-info .section-content .cat-equation-image {
+main.how-it-works-main section.calculator-info .section-content .reference-content {
+  font-size: 16px;
+}
+
+main.how-it-works-main section.calculator-info .section-content .equation-image {
   max-width: 460px;
+  margin-bottom: 10px;
 }
 
 main.how-it-works-main section.calculator-info .section-content .article-link {
@@ -336,5 +340,17 @@ main.how-it-works-main section.calculator-info .section-content .link-icon {
   }
   section .dog-age-varies {
     margin-bottom: 40px;
+  }
+  nav .back-button {
+    margin-bottom: 40px;
+  }
+  main.how-it-works-main section.calculator-info {
+    margin-bottom: 40px;
+  }
+  main.how-it-works-main section.calculator-info .section-content .equation-image {
+    max-width: 100%;
+  }
+  main.how-it-works-main section.calculator-info .section-content .link-icon {
+    width: 14px;
   }
 }

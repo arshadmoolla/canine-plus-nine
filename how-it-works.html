@@ -4,6 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles/style.css">
+    <link rel="icon" type="image/png" href="images/favicon/icon16.png" sizes="16x16">
+    <link rel="icon" type="image/png" href="images/favicon/icon32.png" sizes="32x32">
+    <link rel="icon" type="image/png" href="images/favicon/icon96.png" sizes="96x96">
     <title>How Canine Plus Nine Works</title>
 </head>
 <body>
@@ -14,52 +17,58 @@
             </a>
             <div class="header-text">Calculate your pet's human age based on scientific research!</div>
         </header>
-
         <nav>
             <a href="index.html" class="back-link">
                 <button class="back-button">
-                    <img src="images/arrow-back.svg" alt="Back" class="back-icon">
+                    <img src="images/arrow-back-icon.svg" alt="Back" class="back-icon">
                     Back
                 </button>
             </a>
         </nav>
-        
         <main class="how-it-works-main">
             <h1>How does this work?</h1>
             <section class="calculator-info">
                 <div class="section-heading">Dog Calculator</div>
                 <div class="section-content">
                     <p>The following mathematical function is used (and the output is rounded to the nearest interger):</p>
-                    <p>human_age = 16 ln(dog_age) + 31</p>
+                    <img src="images/dog-equation.svg" alt="Dog Equation" class="equation-image">
                     <p>That's 16 multiplied by the natural logarithm of the dog's real age with 31 added to the total.</p>
                     <p>This function is based on research conducted by scientists who looked at DNA methylation changes experienced by mammals as they age, and focused on comparing it between humans and dogs.</p>
-                    <p>Reference:</p>
-                    <p>Wang, T., Jianzhu, M., Hogan, A.N., Fong, S., Licon, K., Tsui, B., Kreisberg, J.F., Adams, P.D., Carvunis, A.-R., Bannasch, D.L., Ostrander, E.A., Ideker, T. (2020). Quantitative Translation of Dog-to-Human Aging by Conserved Remodeling of the DNA Methylome. <i>Cell Systems, 11</i>(2), 176-185. doi: 10.1016/j.cels.2020.06.006</p>
+                    <p class="reference-heading">Reference:</p>
+                    <p class="reference-content">Wang, T., Jianzhu, M., Hogan, A.N., Fong, S., Licon, K., Tsui, B., Kreisberg, J.F., Adams, P.D., Carvunis, A.-R., Bannasch, D.L., Ostrander, E.A., Ideker, T. (2020). Quantitative Translation of Dog-to-Human Aging by Conserved Remodeling of the DNA Methylome. <i>Cell Systems, 11</i>(2), 176-185. doi: 10.1016/j.cels.2020.06.006</p>
                     <a href="https://doi.org/10.1016/j.cels.2020.06.006" target="_blank" class="article-link">
                         <u>Read Article</u>
-                        <img src="images/link.svg" alt="Link" class="link-icon">
+                        <img src="images/link-icon.svg" alt="Link" class="link-icon">
                     </a>
                 </div>
             </section>
-
             <section class="calculator-info">
                 <div class="section-heading">Cat Calculator</div>
                 <div class="section-content">
                     <p>The follow equation (a piecewise function) is used, and the output is rounded to the nearest interger:</p>
-                    <img src="images/cat-equation.svg" alt="Cat Equation" class="cat-equation-image">
-                    <p>According to this equation, when a cat is 1 year old, it is 16.6364 human years old. If a cat's age is a value greater than or equal to 1.5 then its age in human years is its age multiplied by 4.1364 with 15 added to the total. However, if any other value is provide (e.g. 0.2 or 1.3) then the output is undefined.</p>
+                    <img src="images/cat-equation.svg" alt="Cat Equation" class="equation-image">
+                    <p>According to this equation, when a cat is 1 year old, its human age is 16.6364 years old. If a cat's age is a value greater than or equal to 1.5 then its age in human years is its age multiplied by 4.1364 with 15 added to the total. However, if any other value is provide (e.g. 0.2 or 1.3) then the output is undefined.</p>
                     <p>The researcher created this equation by running regressions on current models in order to develop a more accurate equation.</p>
-                    <p>Reference:</p>
-                    <p>Cambridge, R. (2017). Modeling the Age Difference between Humans and Felis catus Biological Cat Age: The Actual Age of a Cat. <i>Journal of Animal Research and Nutrition, 2</i>(2). doi: 10.21767/2572-5459.100034</p>
+                    <p class="reference-heading">Reference:</p>
+                    <p class="reference-content">Cambridge, R. (2017). Modeling the Age Difference between Humans and Felis catus Biological Cat Age: The Actual Age of a Cat. <i>Journal of Animal Research and Nutrition, 2</i>(2). doi: 10.21767/2572-5459.100034</p>
                     <a href="https://doi.org/10.21767/2572-5459.100034" target="_blank" class="article-link">
                         <u>Read Article</u>
-                        <img src="images/link.svg" alt="Link" class="link-icon">
+                        <img src="images/link-icon.svg" alt="Link" class="link-icon">
                     </a>
                 </div>
             </section>
         </main>
-
+        <nav>
+            <a href="index.html" class="back-link">
+                <button class="back-button">
+                    <img src="images/arrow-back-icon.svg" alt="Back" class="back-icon">
+                    Back
+                </button>
+            </a>
+        </nav>
         <footer>
+            <img src="images/paw-icon.svg" alt="Paw Icon" class="paw-icon">
+            <br>
             <a href="how-it-works.html">
                 <span>How It Works</span>
             </a>

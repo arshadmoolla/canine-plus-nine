@@ -21,7 +21,7 @@ dogContainer.addEventListener("click", () => {
         catButton.style.backgroundColor = "#5E92D4";
         dogImage.src = "images/dog-tongue.svg";
         catImage.src = "images/cat.svg";
-        dogCheckIcon.src = "images/check-circle.svg";
+        dogCheckIcon.src = "images/check-circle-icon.svg";
         catCheckIcon.src = "";
     }
     else if (window.getComputedStyle(dogSection).display === "block") {
@@ -40,7 +40,7 @@ catContainer.addEventListener("click", () => {
         dogButton.style.backgroundColor = "#5E92D4";
         catImage.src = "images/cat-tongue.svg";
         dogImage.src = "images/dog.svg";
-        catCheckIcon.src = "images/check-circle.svg";
+        catCheckIcon.src = "images/check-circle-icon.svg";
         dogCheckIcon.src = "";
     }
     else if (window.getComputedStyle(catSection).display === "block") {

@@ -152,6 +152,10 @@ section.calculator {
 }
 
 footer {
+    .paw-icon {
+        width: 30px;
+        margin-bottom: 5px;
+    }
     a {
     color: $dark_blue;
     font-size: 18px;
@@ -230,18 +234,17 @@ main.how-it-works-main {
             p {
                 margin-bottom: 15px;
             }
-            p:nth-child(2) {
-                font-style: italic;
-                background-color: rgba(94, 146, 212, 0.1);
-                padding: 10px;
-                display: inline-block;
-                border-radius: 6px;
-            }
-            p:nth-child(5) {
+            .reference-heading {
                 font-weight: bold;
+                font-size: 16px;
+                margin-bottom: 5px;
             }
-            .cat-equation-image {
+            .reference-content {
+                font-size: 16px;
+            }
+            .equation-image {
                 max-width: 460px;
+                margin-bottom: 10px;
             }
             .article-link {
                 color: $dark_blue;
@@ -286,6 +289,30 @@ main.how-it-works-main {
         }
         .dog-age-varies {
             margin-bottom: 40px;
+        }
+    }
+    // How It Works Page
+    nav {
+        .back-button {
+            margin-bottom: 40px;
+        }
+    }
+
+    main.how-it-works-main {
+
+        section.calculator-info {
+            margin-bottom: 40px;
+
+            .section-content {
+
+                .equation-image {
+                    max-width: 100%;
+                }
+
+                .link-icon {
+                    width: 14px;
+                }
+            }
         }
     }
 }
