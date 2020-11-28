@@ -115,6 +115,8 @@ section.calculator {
 
 section.calculator form {
   margin-bottom: 50px;
+  /* Chrome, Safari, Edge, Opera */
+  /* Firefox */
 }
 
 section.calculator form .dog-value,
@@ -136,21 +138,35 @@ section.calculator form .cat-value {
 section.calculator form ::-webkit-input-placeholder {
   font-weight: normal;
   color: #BF755A;
+  opacity: 1;
 }
 
 section.calculator form :-ms-input-placeholder {
   font-weight: normal;
   color: #BF755A;
+  opacity: 1;
 }
 
 section.calculator form ::-ms-input-placeholder {
   font-weight: normal;
   color: #BF755A;
+  opacity: 1;
 }
 
 section.calculator form ::placeholder {
   font-weight: normal;
   color: #BF755A;
+  opacity: 1;
+}
+
+section.calculator form input[type=number]::-webkit-outer-spin-button,
+section.calculator form input[type=number]::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+section.calculator form input[type=number] {
+  -moz-appearance: textfield;
 }
 
 section.calculator form .dog-submit-button,
@@ -280,6 +296,11 @@ main.how-it-works-main section.calculator-info .section-heading {
   color: #BF755A;
   font-size: 22px;
   margin-bottom: 10px;
+}
+
+main.how-it-works-main section.calculator-info .section-heading-image {
+  width: 40px;
+  margin-left: 5px;
 }
 
 main.how-it-works-main section.calculator-info .section-content {

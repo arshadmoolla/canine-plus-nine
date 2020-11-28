@@ -116,6 +116,18 @@ section.calculator {
         ::placeholder {
             font-weight: normal;
             color: $brown;
+            opacity: 1; // Firefox
+        }
+        /* Chrome, Safari, Edge, Opera */
+        input[type=number]::-webkit-outer-spin-button,
+        input[type=number]::-webkit-inner-spin-button {
+            -webkit-appearance: none;
+            margin: 0;
+        }
+
+        /* Firefox */
+        input[type=number] {
+            -moz-appearance: textfield;
         }
         .dog-submit-button,
         .cat-submit-button {
@@ -226,6 +238,10 @@ main.how-it-works-main {
             color: $brown;
             font-size: 22px;
             margin-bottom: 10px;
+        }
+        .section-heading-image {
+            width: 40px;
+            margin-left: 5px;
         }
         .section-content {
             color: $dark_blue;

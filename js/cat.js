@@ -19,7 +19,7 @@ catSubmitButton.addEventListener("click", (e) => {
     e.preventDefault();
     const catToHumanAge = convertCatAge(catValue.value);
     if (catValue.value == "" || catValue.value <= 0) {
-        catInfo.innerHTML = `Pleae enter a valid age.`;
+        catInfo.innerHTML = `Please enter a valid age.`;
     }
     else if (catToHumanAge != undefined) {
         catInfo.innerHTML = `At the age of ${catValue.value}, your cat's human age is ${catToHumanAge} years old.`;
